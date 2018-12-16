@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <script src="https://apis.google.com/js/client:platform.js?onload=renderButton" async defer></script>
+
+
+    <meta name="google-signin-client_id" content="1070654539835-iapvq6jh1cr99404iuse4sfsbsmpec36.apps.googleusercontent.com">
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+ 
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Time Frame</title>
+
+    <!-- Mustache.js Reference -->
+    <script type="text/javascript" src="mustache.js"></script> 
+    <script type="text/javascript" src="data.js"></script>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+ 
+        
+        <span class="d-none d-lg-block">
+
+
+            <!--Links -->
+
+            <li class="nav-item" style="list-style: none;">
+                <a href="index.html"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/loginIcon.png"></a> 
+            </li>
+          
+            <li class="nav-item" style="list-style: none;">
+                <a href="calendar.html"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/calendar.png"></a> 
+            </li>
+
+            <li class="nav-item"style="list-style: none;">
+                <a href="spreadSheet.html"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/spreadSheet.png"></a> 
+            </li> 
+        
+
+
+        </span>
+
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       
+    
+    </nav>
+
+
+
+
+
+    <div class="container-fluid p-0">
+
+      <section class="timeFrame-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-0">Time Frame
+          </h1>
+          <div class="subheading mb-5">The project management for VFX/animation project
+          </div>
+
+
+<!-- 
+          <div class="g-signin2" data-width= "100" data-height="50" data-longtitle="true" data-onsuccess="onSignIn"></div>
+
+
+
+          <script>
+            function onSignIn(googleUser) {
+              var profile = googleUser.getBasicProfile();
+               console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+               console.log('Name: ' + profile.getName());
+               console.log('Image URL: ' + profile.getImageUrl());
+               console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
+          </script> -->
+          
+
+            
+             <div id="my-signin2"></div>
+            <script>
+            function onSuccess(googleUser) {
+            console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+            }
+            function onFailure(error) {
+            console.log(error);
+            }
+            function renderButton() {
+            gapi.signin2.render('my-signin2', {
+             'scope': 'profile email',
+             'width': 240,
+             'height': 50,
+             'longtitle': true,
+             'theme': 'dark',
+             'onsuccess': onSuccess,
+             'onfailure': onFailure
+              });
+              }
+            </script>
+
+            <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+
+
+
+
+            
+
+
+          <!-- Show the user profile details -->
+          <div class="userContent" style="display: none;"></div>
+          
+
+    
+       
+
+            
+            
+  
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+
+  </body>
+
+</html>
